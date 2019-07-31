@@ -14,23 +14,24 @@
     color: $text-color
     font-size: 13px
     font-weight: 400
-    padding-bottom: 4px 
+    padding-bottom: 4px
+    +bold
   &__button
     margin-left: 30px
     height: 49px
     width: 170px
     border-radius: 10px
-    padding: 18px 30px
+    padding: 18px 7px
     font-size: 13px
-    font-weight: 400
+    &-text
+      +bold
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
-    font-weight: 600
     text-decoration: none
     margin-top: 2px
-    letter-spacing: 0.04em
+    letter-spacing: 0.02em
     +bold
 @media (max-width: 768px)
   .navbar
