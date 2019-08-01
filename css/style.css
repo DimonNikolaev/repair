@@ -347,6 +347,11 @@ img {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border-color: orange;
+  outline: none;
+}
+
 .offer__button {
   width: 100%;
   min-height: 70px;
