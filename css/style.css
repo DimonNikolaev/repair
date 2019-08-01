@@ -184,6 +184,7 @@ img {
 .hero {
   padding: 50px 0;
   background-color: #f5f5f5;
+  padding-bottom: 80px;
 }
 
 .hero-block {
@@ -329,7 +330,8 @@ img {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
+  margin-top: -11px;
 }
 
 .offer__subtitle {
