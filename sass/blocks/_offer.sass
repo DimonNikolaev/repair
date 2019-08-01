@@ -1,8 +1,9 @@
 .offer
-  background: url(../img/offer/image-offer.png) no-repeat
+  background: url(../img/offer/image-offer.jpg) no-repeat 
   background-position: center right
   background-size: contain
   position: relative
+  margin-top: -84px
   &::before
     content: ''
     width: 50%
@@ -31,6 +32,25 @@
   &__button
     width: 100%
     min-height: 70px
+    margin-bottom: 30px
+  &__call
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_manager
+      +reg
+      max-width: 224px
+    &_text
+      +reg
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+    &_tel
+      display: block
+      text-decoration: none
+      color: $text-color
+      font-weight: 400
+      +bold
 @media (max-width: 1200px)
   .offer
     background-size: cover

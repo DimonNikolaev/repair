@@ -194,8 +194,8 @@ img {
 
 .hero-text {
   padding-right: 100px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
 }
 
 .hero-text__title {
@@ -258,7 +258,7 @@ img {
 }
 
 .hero-image {
-  margin-left: 49px;
+  margin-left: 1px;
   margin-top: -6px;
 }
 
@@ -303,10 +303,11 @@ img {
 }
 
 .offer {
-  background: url(../img/offer/image-offer.png) no-repeat;
+  background: url(../img/offer/image-offer.jpg) no-repeat;
   background-position: center right;
   background-size: contain;
   position: relative;
+  margin-top: -84px;
 }
 
 .offer::before {
@@ -349,6 +350,42 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 30px;
+}
+
+.offer__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer__call_manager {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  max-width: 224px;
+}
+
+.offer__call_text {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.offer__call_tel {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
