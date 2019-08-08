@@ -54,6 +54,7 @@ img {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-align: center;
+  max-width: 500px;
 }
 
 .section-subtitle {
@@ -510,7 +511,6 @@ img {
 }
 
 .portfolio__title {
-  max-width: 786px;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -532,5 +532,15 @@ img {
 
 .portfolio .slider__image {
   margin: auto;
+}
+
+price__title {
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+price__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

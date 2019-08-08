@@ -26,7 +26,7 @@ function backToTop() {
     e.preventDefault();
     $('html').animate({
       scrollTop: 0
-    }, 1000);
+    }, 500);
   })
 }
 
