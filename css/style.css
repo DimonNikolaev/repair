@@ -513,6 +513,11 @@ img {
 .portfolio__title {
   margin: auto;
   margin-bottom: 100px;
+  line-height: 45px;
+  font-size: 29px;
+  max-width: 786px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .portfolio__arrows {
