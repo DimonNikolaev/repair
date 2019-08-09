@@ -507,7 +507,9 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url(../img/portfolio/point-image.jpg) repeat-y center left;
+  background: #f5f5f5 url(../img/portfolio/point-image.jpg);
+  background-repeat: repeat-y;
+  background-position: -40px;
 }
 
 .portfolio__title {
