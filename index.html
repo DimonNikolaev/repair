@@ -99,7 +99,7 @@
           <!-- /.section-subtitle -->
           <form action="#" id="offer-form" class="form offer_form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button wow fadeIn" data-wow-delay="0.5">Получить бесплатный дизайн-проект
             </button>
           </form>
@@ -377,6 +377,8 @@
     $(".phone").mask("+7(999) 999-99-99");
     // Подключение валидации форм
     $('#brif-form').validate({
+      errorClass: "invalid",
+      errorElement: "div",
       rules: {
         phone: {
           required: true,
@@ -390,6 +392,39 @@
           required: true,
           email: true
         }
+
+      },
+
+      messages: {
+        phone: "Заполните поле",
+        username: {
+          required: "Заполните поле",
+          minlength: jQuery.validator.format("Мнимимум 2 символа"),
+          maxlength: jQuery.validator.format("Максимум 15 символов")
+        },
+        email: {
+          required: "Заполните поле",
+          email: "Введите корректный email"
+        }
+      }
+    })
+    $('#offer-form').validate({
+      errorClass: "invalid",
+      errorElement: "div",
+      rules: {
+        phone: {
+          required: true,
+        },
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        email: {
+          required: true,
+          email: true
+        }
+
       },
 
       messages: {

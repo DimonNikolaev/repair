@@ -73,6 +73,14 @@ img {
   cursor: pointer;
 }
 
+.brif__input.invalid {
+  border: 1px solid red;
+}
+
+.offer__input.invalid {
+  border: 1px solid red;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -425,6 +433,15 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row-re;
+          flex-direction: row-re;
 }
 
 .offer__input:first-child {
