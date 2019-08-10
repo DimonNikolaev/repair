@@ -327,9 +327,10 @@
           <div class="form brif__form">
             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
-            <form action="#">
-              <input type="text" class="input brif__input" placeholder="Ваше имя">
-              <input type="text" class="input brif__input" placeholder="Ваш телефон">
+            <form action="#" id="brif-form">
+              <input type="text" name="username" required class="input brif__input" placeholder="Ваше имя">
+              <input type="text" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+              <input type="text" name="email" class="input brif__input" placeholder="Ваш email">
               <button class="button brif__button">Узнать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд
               </span>
@@ -367,8 +368,43 @@
   <script src="js/slick-slider.js"></script>
   <!-- Подключении анимации при скролле -->
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
+    // Подключение анимации
     new WOW().init();
+    // Подключение маски для телефона
+    $(".phone").mask("+7(999) 999-99-99");
+    // Подключение валидации форм
+    $('#brif-form').validate({
+      rules: {
+        phone: {
+          required: true,
+        },
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+
+      messages: {
+        phone: "Заполните поле",
+        username: {
+          required: "Заполните поле",
+          minlength: jQuery.validator.format("Мнимимум 2 символа"),
+          maxlength: jQuery.validator.format("Максимум 15 символов")
+        },
+        email: {
+          required: "Заполните поле",
+          email: "Введите корректный email"
+        }
+      }
+    })
   </script>
 
 </body>
