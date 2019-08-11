@@ -419,24 +419,14 @@
           required: true,
           minlength: 2,
           maxlength: 15
-        },
-        email: {
-          required: true,
-          email: true
         }
-
       },
-
       messages: {
         phone: "Заполните поле",
         username: {
           required: "Заполните поле",
           minlength: jQuery.validator.format("Мнимимум 2 символа"),
           maxlength: jQuery.validator.format("Максимум 15 символов")
-        },
-        email: {
-          required: "Заполните поле",
-          email: "Введите корректный email"
         }
       }
     })
