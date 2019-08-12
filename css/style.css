@@ -286,10 +286,6 @@ img {
   margin-bottom: 25px;
 }
 
-.hero-list__item:last-child {
-  margin-bottom: 0px;
-}
-
 .hero-list__image {
   width: 40px;
   height: 40px;
@@ -456,6 +452,8 @@ img {
 }
 
 .offer__button {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   width: 100%;
   min-height: 70px;
   margin-bottom: 30px;
@@ -591,14 +589,27 @@ img {
   margin: auto;
 }
 
+.cards-repair {
+  margin-bottom: -48px;
+}
+
 .price__title {
   margin: auto;
   margin-bottom: 58px;
+  font-size: 30px;
+  max-width: 515px;
+  font-size: 18px;
 }
 
 .price__subtitle {
   margin-bottom: 59px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
 }
 
 .price__card {
@@ -624,6 +635,7 @@ img {
 
 .card__image {
   position: relative;
+  margin-bottom: -38px;
 }
 
 .card__image img {
@@ -649,7 +661,8 @@ img {
 }
 
 .card__title {
-  margin-top: 0;
+  margin-bottom: 17px;
+  line-height: 45px;
 }
 
 .card__link {
@@ -742,25 +755,40 @@ img {
           align-items: center;
   border-radius: 50%;
   margin: auto;
+  margin-bottom: 27px;
 }
 
-.step__image__text {
+.step__text {
   font-size: 14px;
   max-width: 160px;
   -webkit-animation-name: fadeInLeft;
           animation-name: fadeInLeft;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
+  max-width: 144px;
+  margin: auto;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.steps {
+  margin-bottom: -90px;
 }
 
 .steps__title {
   margin: auto;
-  margin-bottom: 59px;
+  margin-bottom: 46px;
+  font-size: 30px;
+  max-width: 670px;
+  line-height: 43px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .steps__subtitle {
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 67px;
+  font-size: 20px;
 }
 
 .steps-block {
@@ -1004,5 +1032,82 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 39px;
+}
+
+.help__title {
+  background-color: #ffc000;
+  margin-bottom: 100px;
+}
+
+.help__title_text {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+.card-help {
+  max-width: 370px;
+  max-height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-right: 30px;
+  border: none;
+  text-align: left;
+}
+
+.card-help:last-child {
+  margin-right: 0;
+}
+
+.card-help__text {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  line-height: 23px;
+  font-size: 16px;
+  margin: auto;
+}
+
+.card-help__text:nth-child(1) {
+  padding: 40px 85px 48px 26px;
+}
+
+.card-help__text:nth-child(2) {
+  padding: 27px 50px 48px 25px;
+}
+
+.card-help__text:nth-child(3) {
+  padding: 27px 64px 48px 25px;
+}
+
+.card-help__text_bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.card-help #text {
+  max-width: 280px;
+}
+
+.card-help #text:last-child {
+  max-width: 280px;
 }
 /*# sourceMappingURL=style.css.map */
