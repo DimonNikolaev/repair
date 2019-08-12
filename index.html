@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/hover-min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c3012eec-7753-41dd-8778-5689529a0885&lang=ru_RU"
+    type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -343,8 +346,49 @@
       <!-- /.container -->
     </section>
     <!-- /.section brif -->
-
   </main>
+
+  <footer class="footer">
+    <div id="map" class="map" style="width: 921px; height: 640px">
+    </div>
+    <!-- /.map -->
+    <div class="container">
+      <div class="contacts-blocks">
+        <div class="contacts">
+          <h3 class="contacts__title">Приезжайте к нам в гости!
+            Проконсультируем Вас
+            по всем вопросам ремонта
+          </h3>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/map.png" alt=""></span>
+              <span class="contacts-list__text">г. Москва<br>
+                ул. Ленинга, д. 10,
+                корпус 2, оф. 308</span>
+            </li>
+            <!-- /.contacts-list__item -->
+            <li class="contacts-list__item"><span class="contacts-list__icon"></span>
+              <span class="contacts-list__icon"><img src="img/footer/clock.png" alt=""></span>
+              <span class="contacts-list__text">Режим работы: <br>
+                с 9:00 до 18:00
+              </span>
+            </li>
+            <!-- /.contacts-list__item -->
+            <li class="contacts-list__item"><span class="contacts-list__icon"></span>
+              <span class="contacts-list__icon"><img src="img/footer/phone-call.png" alt=""></span>
+              <span class="contacts-list__text">Телефон:<a href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a></span>
+            </li>
+            <!-- /.contacts-list__item -->
+          </ul>
+          <!-- /.contacts-list -->
+        </div>
+        <!-- /.contacts -->
+      </div>
+      <!-- /.contacts-blocks -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer section -->
 
   <div class="container">
     <div class="modal" id="modal">
@@ -427,11 +471,30 @@
           required: "Заполните поле",
           minlength: jQuery.validator.format("Мнимимум 2 символа"),
           maxlength: jQuery.validator.format("Максимум 15 символов")
-          
         }
       }
     })
   </script>
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+
+    function init() {
+      // Создание карты.    
+      var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [55.76, 37.64],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 7
+      });
+    }
+  </script>
+
 
 </body>
 
