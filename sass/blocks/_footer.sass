@@ -8,12 +8,14 @@
 .contacts
   flex-basis: 50%
   padding-top: 100px
-  padding-left: 200px
+  padding-left: 213px
   &__title
     +bold
     font-size: 22px
     line-height: 1.4
     margin-bottom: 100px
+    margin-top: -22px
+    max-width: 340px
   &-blocks
     display: flex
     justify-content: flex-end
@@ -30,3 +32,10 @@
       display: flex
       align-items: flex-start
       margin-bottom: 39px
+    &__text
+      a
+        text-decoration: none
+        color: #000
+      &_bold
+        line-height: 26px
+        +bold

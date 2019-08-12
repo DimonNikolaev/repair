@@ -10,7 +10,7 @@
   &__form
     text-align: centera
     flex-basis: 50%
-    padding-left: 200px
+    padding-left: 214px
   &__input
     width: 100%
     max-width: 370px
@@ -21,23 +21,31 @@
     max-width: 370px
     margin-top: 15px
     margin-bottom: 33px
+    +bold
 .interview
   padding-right: 70px
   &__title
     font-size: 22px
     margin-bottom: 50px
+    margin-top: 8px
+    line-height: 33px
   &__subtitle
     font-size: 16px
-    margin-bottom: 95px
+    margin-bottom: 89px
     display: block
   &-list
     list-style: none
     padding: 0
     &__item
       display: flex
-      align-items: center
+      align-items: baseline
       +bold
       margin-bottom: 25px
+      font-size: 18px
+      &:nth-child(1)
+        margin-bottom: 25px
+      &:nth-child(3)
+        margin-bottom: 39px
     &__counter
       border-radius: 50%
       display: inline-block
@@ -49,17 +57,28 @@
       margin-right: 30px
       border: 2px solid $text-color
       margin-right: 30px
+      padding-left: 4px
     &__text
-      max-width: 327px
+      max-width: 386px
 .form
   &__title
     font-size: 22px
-    margin-bottom: 50px
+    margin-bottom: 43px
+    line-height: 33px
+    text-align: center
+    margin-top: 6px
     +bold
   &__subtitle
     font-size: 16px
-    margin-bottom: 95px
+    margin-bottom: 57px
     display: block
+    text-align: center
+    +bold
+  &__description
+    display: flex
+    justify-content: center
+    padding-left: 20px
+    +bold
 @media (max-width: 1200px)
   .interview
     padding-right: 30px
