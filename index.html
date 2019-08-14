@@ -8,35 +8,12 @@
   <title>Document</title>
   <!-- Подключени библиотек -->
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=c3012eec-7753-41dd-8778-5689529a0885&lang=ru_RU">
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=c3012eec-7753-41dd-8778-5689529a0885&lang=ru_RU"> -->
   </script>
 
 </head>
 
 <body>
-  <!-- Yandex.Metrika counter -->
-  <script>
-    (function (m, e, t, r, i, k, a) {
-      m[i] = m[i] || function () {
-        (m[i].a = m[i].a || []).push(arguments)
-      };
-      m[i].l = 1 * new Date();
-      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
-        a)
-    })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(54884344, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true
-    });
-  </script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/54884344" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -77,19 +54,19 @@
               с гарантией качества, прописанной в договоре
             </span>
             <ul class="hero-list">
-              <li class="hero-list__item animated fadeInLeft" data-wow-delay="0.1s">
+              <li class="hero-list__item animated fadeIn" data-wow-delay="0.1s">
                 <div class="hero-list__image"><img src="img/hero/watch-icon.png" alt=""></div>
                 <span class="hero-list__text">Точно соблюдаем сроки
                 </span>
               </li>
-              <li class="hero-list__item animated fadeInLeft" data-wow-delay="0.1s">
+              <li class="hero-list__item animated fadeIn" data-wow-delay="0.1s">
                 <div class="hero-list__image"><img src="img/hero/calculator-icon.png" alt="">
                 </div>
                 <span class="hero-list__text">Рассчитаем смету на работы<br>
                   и материалы в день обращения
                 </span>
               </li>
-              <li class="hero-list__item animated fadeInLeft" data-wow-delay="0.1s">
+              <li class="hero-list__item animated fadeIn" data-wow-delay="0.1s">
                 <div class="hero-list__image"><img src="img/hero/paint-icon.png" alt=""></div>
                 <span class="hero-list__text">Предложим более 100 вариантов<br>
                   исполнения дизайна Вашего жилья
@@ -242,7 +219,7 @@
               </h4>
               <a href="#" class="card__link">Узнать цены</a>
             </div>
-            <!-- /.card-help__text -->
+            <!-- /.card__text -->
           </div>
           <!-- /.card -->
         </div>
@@ -403,48 +380,47 @@
     <!-- /.section brif -->
   </main>
 
-  <footer class="footer">
-    <div id="map" class="map" style="width: 921px; height: 640px">
-    </div>
-    <!-- /.map -->
+
+
+  <div class="contacts-blocks">
+    <iframe src="https://www.google.com/maps/embed?pb=" class="map"></iframe>
     <div class="container">
-      <div class="contacts-blocks">
-        <div class="contacts">
-          <h3 class="contacts__title">Приезжайте к нам в гости!
-            Проконсультируем Вас
-            по всем вопросам ремонта
-          </h3>
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <span class="contacts-list__icon"><img src="img/footer/map.png" alt=""></span>
-              <div class="contacts-list__text">г. Москва<br>
-                <span class="contacts-list__text_bold">ул. Ленинга, д. 10,<br>
-                  корпус 2, оф. 308
-                </span>
-              </div>
-            </li>
-            <!-- /.contacts-list__item -->
-            <li class="contacts-list__item">
-              <span class="contacts-list__icon"><img src="img/footer/clock.png" alt=""></span>
-              <div class="contacts-list__text">Режим работы:<br>
-                <span class="contacts-list__text_bold">с 9:00 до 18:00</span>
-              </div>
-            </li>
-            <!-- /.contacts-list__item -->
-            <li class="contacts-list__item">
-              <span class="contacts-list__icon"><img src="img/footer/phone-call.png" alt=""></span>
-              <div class="contacts-list__text">Телефон:</span><br><a href="tel:+7(495)42-251-31"><span
-                    class="contacts-list__text_bold"> + 7 (495) 42-251-31</span></a></div>
-            </li>
-            <!-- /.contacts-list__item -->
-          </ul>
-          <!-- /.contacts-list -->
-        </div>
-        <!-- /.contacts -->
+      <div class="contacts">
+        <h3 class="contacts__title">Приезжайте к нам в гости!
+          Проконсультируем Вас
+          по всем вопросам ремонта
+        </h3>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <span class="contacts-list__icon"><img src="img/footer/map.png" alt=""></span>
+            <div class="contacts-list__text">г. Москва<br>
+              <span class="contacts-list__text_bold">ул. Ленинга, д. 10,<br>
+                корпус 2, оф. 308
+              </span>
+            </div>
+          </li>
+          <!-- /.contacts-list__item -->
+          <li class="contacts-list__item">
+            <span class="contacts-list__icon"><img src="img/footer/clock.png" alt=""></span>
+            <div class="contacts-list__text">Режим работы:<br>
+              <span class="contacts-list__text_bold">с 9:00 до 18:00</span>
+            </div>
+          </li>
+          <!-- /.contacts-list__item -->
+          <li class="contacts-list__item">
+            <span class="contacts-list__icon"><img src="img/footer/phone-call.png" alt=""></span>
+            <div class="contacts-list__text">Телефон:</span><br><a href="tel:+7(495)42-251-31"><span
+                  class="contacts-list__text_bold"> + 7 (495) 42-251-31</span></a></div>
+          </li>
+          <!-- /.contacts-list__item -->
+        </ul>
+        <!-- /.contacts-list -->
       </div>
-      <!-- /.contacts-blocks -->
+      <!-- /.contacts -->
     </div>
     <!-- /.container -->
+  </div>
+  <!-- /.contacts-blocks -->
   </footer>
   <!-- /.footer section -->
 
@@ -459,8 +435,6 @@
     <!-- /.modal -->
   </div>
   <!-- /.container -->
-
-
 
   <!-- Скрипты -->
 
@@ -540,7 +514,7 @@
       }
     })
   </script>
-  <script>
+  <!-- <script>
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(init);
@@ -558,7 +532,7 @@
         zoom: 7
       });
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
