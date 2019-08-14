@@ -8,11 +8,14 @@
   <title>Document</title>
   <!-- Подключени библиотек -->
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=c3012eec-7753-41dd-8778-5689529a0885&lang=ru_RU"
-    type="text/javascript">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c3012eec-7753-41dd-8778-5689529a0885&lang=ru_RU">
   </script>
+
+</head>
+
+<body>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
+  <script>
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () {
         (m[i].a = m[i].a || []).push(arguments)
@@ -34,9 +37,6 @@
     <div><img src="https://mc.yandex.ru/watch/54884344" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
   <!-- /Yandex.Metrika counter -->
-</head>
-
-<body>
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -136,7 +136,7 @@
             <div class="offer__call_me">
               <span class="offer__call_text">
                 или перезвоните нам сами
-                <a class="offer__call_tel" href="+7 (495) 42-251-31">+7 (495) 42-251-31</a>
+                <a class="offer__call_tel" href="+7(495)42-251-31">+7 (495) 42-251-31</a>
               </span>
             </div>
           </div>
@@ -417,16 +417,18 @@
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <span class="contacts-list__icon"><img src="img/footer/map.png" alt=""></span>
-              <div class="contacts-list__text">г. Москва</span><br>
+              <div class="contacts-list__text">г. Москва<br>
                 <span class="contacts-list__text_bold">ул. Ленинга, д. 10,<br>
-                  корпус 2, оф. 308</span></div>
+                  корпус 2, оф. 308
+                </span>
+              </div>
             </li>
             <!-- /.contacts-list__item -->
             <li class="contacts-list__item">
               <span class="contacts-list__icon"><img src="img/footer/clock.png" alt=""></span>
-              <div class="contacts-list__text">Режим работы:</span><br>
-                <span class="contacts-list__text_bold">с 9:00 до 18:00</div>
-              </span>
+              <div class="contacts-list__text">Режим работы:<br>
+                <span class="contacts-list__text_bold">с 9:00 до 18:00</span>
+              </div>
             </li>
             <!-- /.contacts-list__item -->
             <li class="contacts-list__item">
@@ -538,7 +540,7 @@
       }
     })
   </script>
-  <script type="text/javascript">
+  <script>
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(init);

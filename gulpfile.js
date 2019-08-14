@@ -1,7 +1,9 @@
 var gulp = require('gulp');
+var cleanCSS = require('gulp-clean-css')
+var htmlmin = require('gulp-htmlmin')
+var tinyPNG = require('gulp-tinypng-compress');
 
 gulp.task('default', defaultTask);
-
 
 function defaultTask(done) {
   done();
@@ -9,6 +11,51 @@ function defaultTask(done) {
 
 gulp.task('minify-css', function (done) {
   return gulp.src('./css/*.css')
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
     .pipe(gulp.dest('dist/css/'))
+
   done();
 })
+
+gulp.task('minify-js', function (done) {
+  return gulp.src('./js/*.js')
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(gulp.dest('dist/js/'))
+
+  done();
+})
+
+gulp.task('htmlmin', function (done) {
+  return gulp.src('*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest('dist/'))
+
+  done();
+})
+
+gulp.task('fonts', function (done) {
+  return gulp.src('./fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'))
+  done();
+})
+
+gulp.task('tinypng', function (done) {
+  return gulp.src('./img/**/*.{png,jpg,jpeg}')
+    .pipe(tinyPNG({
+      key: 'CqCY86sD5k4rrHCHnDr01l9mz1Y92hsP'
+    }))
+    .pipe(gulp.dest('dist/img/'));
+  done();
+});
+
+
+
+gulp.task('default', gulp.parallel('minify-css', 'minify-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
+  done();
+}))
