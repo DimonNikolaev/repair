@@ -3,9 +3,6 @@ var cleanCSS = require('gulp-clean-css')
 var htmlmin = require('gulp-htmlmin')
 // Подключение компрессора для фотографий
 var tinyPNG = require('gulp-tinypng-compress');
-// Подключение сжатия для js
-var uglifyjs = require('uglify-js'); 
-var pipeline = require('readable-stream').pipeline;
 
 
 gulp.task('default', defaultTask);
@@ -24,13 +21,13 @@ gulp.task('minify-css', function (done) {
   done();
 })
 
-gulp.task('compress', function () {
-  return pipeline(
-        gulp.src('.js/*.js'),
-        uglify(),
-        gulp.dest('dist/js/')
-  );
-});
+// gulp.task('compress', function () {
+//   return pipeline(
+//         gulp.src('.js/*.js'),
+//         uglify(),
+//         gulp.dest('dist/js/')
+//   );
+// });
 
 gulp.task('htmlmin', function (done) {
   return gulp.src('*.html')
@@ -57,6 +54,6 @@ gulp.task('tinypng', function (done) {
   done();
 });
 
-gulp.task('default', gulp.parallel('minify-css', 'compress', 'fonts', 'htmlmin', 'tinypng', function (done) {
+gulp.task('default', gulp.parallel('minify-css', 'fonts', 'htmlmin', 'tinypng', function (done) {
   done();
 }))

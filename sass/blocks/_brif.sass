@@ -105,7 +105,36 @@
     background-position: top center , center bottom
     background-size: 100% 50%, cover
     background-repeat: repeat-x, no-repeat
+    max-width: 350px
+    padding-bottom: 45px
+    padding-top: 21px
     &-block
       flex-direction: column
     &__form
       margin-top: 80px
+      display: flex
+      flex-direction: column
+      padding-left: 0
+      .form
+        &__title
+          +bold
+          width: 274px
+          line-height: 25.35px
+          font-size: 16px
+        &__subtitle
+          +reg
+        &__description
+          +reg
+          text-align: center
+  .interview
+    &-list
+      &__item
+        display: flex
+        align-items: center
+      &__text
+        max-width: 210px
+        +bold
+      &__counter
+        margin-right: 8px
+    &__title
+      line-height: 23px

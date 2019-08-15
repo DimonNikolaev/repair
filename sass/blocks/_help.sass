@@ -40,3 +40,43 @@
     max-width: 280px
     &:last-child
       max-width: 280px
+
+@media (max-width: 1200px)
+  .help__title
+    max-width: 100%
+    margin: auto
+    &_text
+      max-width: 500px
+
+@media (max-width: 768px)
+  .help__title
+    margin: auto
+    height: 321px
+    &_text
+      display: flex
+      justify-content: center
+      align-items: center
+      +bold
+      line-height: 30px
+      width: 100%
+      font-size: 18px
+      width: 268px
+  .card-help
+    margin: auto
+    &_img
+      &:last-child
+        max-width: 92%
+    &__text
+      font-size: 14px
+      text-align: center
+      &:nth-child(1)
+        padding-left: 0
+        padding-right: 0
+      &:nth-child(2)
+        padding-left: 0
+        padding-right: 0
+      &:nth-child(3)
+        padding-left: 0
+        padding-right: 0
+// @media (max-width: 567px)
+  

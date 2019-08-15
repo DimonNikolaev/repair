@@ -5561,8 +5561,7 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 580px;
-    width: 90%;
+    width: 580px;
   }
 }
 
@@ -6445,6 +6444,9 @@ img {
     background-position: top center , center bottom;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
+    max-width: 350px;
+    padding-bottom: 45px;
+    padding-top: 21px;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -6454,6 +6456,49 @@ img {
   }
   .brif__form {
     margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+  }
+  .brif__form .form__title {
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    width: 274px;
+    line-height: 25.35px;
+    font-size: 16px;
+  }
+  .brif__form .form__subtitle {
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
+  }
+  .brif__form .form__description {
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
+    text-align: center;
+  }
+  .interview-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .interview-list__text {
+    max-width: 210px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .interview-list__counter {
+    margin-right: 8px;
+  }
+  .interview__title {
+    line-height: 23px;
   }
 }
 
@@ -6461,7 +6506,7 @@ img {
   position: relative;
 }
 
-.map {
+.contacts-blocks__map {
   width: 1175px;
   height: 640px;
   border: none;
@@ -6525,6 +6570,57 @@ img {
   line-height: 26px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 100px;
+  }
+  .contacts-blocks__map {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-top: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts__title {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .contacts-list {
+    margin-bottom: 40px;
+  }
+  .contacts-list_text {
+    line-height: 26px;
+  }
+  .contacts-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-blocks__map {
+    max-width: 324px;
+    height: 640px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .help__title {
@@ -6602,4 +6698,60 @@ img {
 
 .card-help #text:last-child {
   max-width: 280px;
+}
+
+@media (max-width: 1200px) {
+  .help__title {
+    max-width: 100%;
+    margin: auto;
+  }
+  .help__title_text {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .help__title {
+    margin: auto;
+    height: 321px;
+  }
+  .help__title_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    width: 100%;
+    font-size: 18px;
+    width: 268px;
+  }
+  .card-help {
+    margin: auto;
+  }
+  .card-help_img:last-child {
+    max-width: 92%;
+  }
+  .card-help__text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card-help__text:nth-child(1) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card-help__text:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card-help__text:nth-child(3) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

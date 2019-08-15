@@ -1,9 +1,9 @@
 .footer
   position: relative
-.map
+.contacts-blocks__map
   width: 1175px
   height: 640px
-  border: none
+  border: none 
 .contacts
   flex-basis: 50%
   padding-top: 100px
@@ -38,3 +38,34 @@
       &_bold
         line-height: 26px
         +bold
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 100px
+    &-blocks__map
+      width: 760px
+@media (max-width: 768px)
+  .contacts
+    padding-top: 0
+    padding-left: 0
+    display: flex
+    flex-direction: column
+    &__title
+      margin-bottom: 25px
+      font-size: 18px
+      +bold
+    &-list
+      &_item
+      margin-bottom: 40px
+      &_text
+        line-height: 26px
+    &-blocks
+      display: flex
+      flex-direction: column
+    &-blocks__map
+      max-width: 324px
+      height: 640px
+      order: 1
+  
+  
+  
+  
