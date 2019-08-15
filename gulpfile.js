@@ -3,11 +3,14 @@ var cleanCSS = require('gulp-clean-css')
 var htmlmin = require('gulp-htmlmin')
 // Подключение компрессора для фотографий
 var tinyPNG = require('gulp-tinypng-compress');
+var rename = require("gulp-rename");
+
 
 var uglifyjs = require('uglify-js');
 var composer = require('gulp-uglify/composer');
 var pump = require('pump');
 var minify = composer(uglifyjs, console);
+
 
 gulp.task('default', defaultTask);
 
@@ -20,11 +23,14 @@ gulp.task('compress', function (cb) {
   var options = {};
 
   pump([
-      gulp.src('./js/*.js'),
+      gulp.src(['./js/*.js', '!./js/*.min.js']),
       minify(options),
+      rename({
+        suffix: '.min'
+      }),
       gulp.dest('dist/js/')
     ],
-    cb
+    cb()
   );
 });
 
