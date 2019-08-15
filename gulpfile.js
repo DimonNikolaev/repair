@@ -4,12 +4,30 @@ var htmlmin = require('gulp-htmlmin')
 // Подключение компрессора для фотографий
 var tinyPNG = require('gulp-tinypng-compress');
 
+var uglifyjs = require('uglify-js');
+var composer = require('gulp-uglify/composer');
+var pump = require('pump');
+var minify = composer(uglifyjs, console);
 
 gulp.task('default', defaultTask);
 
 function defaultTask(done) {
   done();
 }
+
+gulp.task('compress', function (cb) {
+  // the same options as described above
+  var options = {};
+
+  pump([
+      gulp.src('./js/*.js'),
+      minify(options),
+      gulp.dest('dist/js/')
+    ],
+    cb
+  );
+});
+
 
 gulp.task('minify-css', function (done) {
   return gulp.src('./css/*.css')
@@ -21,13 +39,6 @@ gulp.task('minify-css', function (done) {
   done();
 })
 
-// gulp.task('compress', function () {
-//   return pipeline(
-//         gulp.src('.js/*.js'),
-//         uglify(),
-//         gulp.dest('dist/js/')
-//   );
-// });
 
 gulp.task('htmlmin', function (done) {
   return gulp.src('*.html')
@@ -54,6 +65,6 @@ gulp.task('tinypng', function (done) {
   done();
 });
 
-gulp.task('default', gulp.parallel('minify-css', 'fonts', 'htmlmin', 'tinypng', function (done) {
+gulp.task('default', gulp.parallel('minify-css', 'compress', 'fonts', 'htmlmin', 'tinypng', function (done) {
   done();
 }))

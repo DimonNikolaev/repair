@@ -12,18 +12,18 @@ $(document).ready(function () {
 })
 
 function backToTop() {
-  let button = $('.offer__scroll');
+  btn = $('.offer__scroll');
 
-  $(window).on('scroll', () => {
+  $(window).on('scroll', function() {
     if ($(this).scrollTop() >= 50) {
-      button.fadeIn();
+      btn.fadeIn();
     } else {
-      button.fadeOut();
+      btn.fadeOut();
     }
   })
 
-  button.on('click', (e) => {
-    e.preventDefault();
+  btn.on('click', function(event) {
+    event.preventDefault();
     $('html').animate({
       scrollTop: 0
     }, 500);
