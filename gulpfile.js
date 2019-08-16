@@ -18,10 +18,15 @@ function defaultTask(done) {
   done();
 }
 
+gulp.task('move-min-js', function (cb) {
+  gulp.src('./js/*.min.js')
+    .pipe(gulp.dest('dist/js/'))
+})
+
+
 gulp.task('compress', function (cb) {
   // the same options as described above
-  var options = {};
-
+  var options = {}
   pump([
       gulp.src(['./js/*.js', '!./js/*.min.js']),
       minify(options),
@@ -71,6 +76,6 @@ gulp.task('tinypng', function (done) {
   done();
 });
 
-gulp.task('default', gulp.parallel('minify-css', 'compress', 'fonts', 'htmlmin', 'tinypng', function (done) {
+gulp.task('default', gulp.parallel('minify-css', 'move-min-js', 'compress', 'fonts', 'htmlmin', 'tinypng', function (done) {
   done();
 }))

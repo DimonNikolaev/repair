@@ -14,7 +14,7 @@ $(document).ready(function () {
 function backToTop() {
   btn = $('.offer__scroll');
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     if ($(this).scrollTop() >= 50) {
       btn.fadeIn();
     } else {
@@ -22,7 +22,7 @@ function backToTop() {
     }
   })
 
-  btn.on('click', function(event) {
+  btn.on('click', function (event) {
     event.preventDefault();
     $('html').animate({
       scrollTop: 0

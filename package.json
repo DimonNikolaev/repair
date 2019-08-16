@@ -26,6 +26,7 @@
   "dependencies": {
     "gulp-global-exclude": "^1.0.1",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
     "gulp-rename": "^1.4.0"
   }
 }
