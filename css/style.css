@@ -5561,7 +5561,8 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    width: 580px;
+    max-width: 580px;
+    width: 90%;
   }
 }
 
@@ -5671,10 +5672,6 @@ img {
 }
 
 @media (max-width: 567px) {
-  .container {
-    margin-top: 8px;
-    margin-left: 23px;
-  }
   .navbar__button {
     color: #333333;
     border-radius: 5px;
@@ -5682,6 +5679,9 @@ img {
     height: 39px;
     font-weight: 400;
     font-size: 10px;
+  }
+  .navbar__button-text {
+    width: 85px;
   }
 }
 
@@ -5922,7 +5922,8 @@ img {
 .offer__call_manager {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
-  max-width: 224px;
+  max-width: 247px;
+  line-height: 21px;
 }
 
 .offer__call_text {
@@ -6003,7 +6004,7 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url(../img/portfolio/point-image.jpg);
+  background: #f5f5f5 url(../img/portfolio/point-image.png);
   background-repeat: repeat-y;
   background-position: -40px;
 }
@@ -6045,8 +6046,9 @@ img {
   margin: auto;
   margin-bottom: 58px;
   font-size: 30px;
-  max-width: 515px;
-  font-size: 18px;
+  max-width: 532px;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .price__subtitle {
@@ -6151,6 +6153,12 @@ img {
       flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .price__card {
+    max-width: 285px;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     background-color: #ffffff;
@@ -6208,15 +6216,14 @@ img {
 
 .step__text {
   font-size: 14px;
-  max-width: 160px;
+  max-width: 183px;
   -webkit-animation-name: fadeInLeft;
           animation-name: fadeInLeft;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
-  max-width: 144px;
   margin: auto;
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .steps {
@@ -6227,7 +6234,7 @@ img {
   margin: auto;
   margin-bottom: 46px;
   font-size: 30px;
-  max-width: 670px;
+  max-width: 675px;
   line-height: 43px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -6283,6 +6290,7 @@ img {
   background-position: left center , center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
+  padding-bottom: 70px;
 }
 
 .brif-block {
@@ -6412,6 +6420,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 35px;
+  }
   .interview {
     padding-right: 30px;
   }
@@ -6429,12 +6440,26 @@ img {
   .interview-list__counter {
     margin-right: 20px;
   }
+  .form__description {
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
   .form__title {
     font-size: 20px;
     margin-bottom: 15px;
   }
   .form__subtitle {
     margin-bottom: 30px;
+  }
+  .form .brif-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -6444,9 +6469,7 @@ img {
     background-position: top center , center bottom;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
-    max-width: 350px;
-    padding-bottom: 45px;
-    padding-top: 21px;
+    max-width: 100%;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -6515,7 +6538,7 @@ img {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 100px;
+  padding-top: 34px;
   padding-left: 213px;
 }
 
@@ -6577,7 +6600,7 @@ img {
     padding-left: 100px;
   }
   .contacts-blocks__map {
-    width: 760px;
+    width: 759px;
   }
 }
 
@@ -6615,8 +6638,8 @@ img {
             flex-direction: column;
   }
   .contacts-blocks__map {
-    max-width: 324px;
     height: 640px;
+    width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -6701,12 +6724,20 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .help__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .help__title {
     max-width: 100%;
     margin: auto;
   }
   .help__title_text {
-    max-width: 500px;
+    max-width: 805px;
+  }
+  .card-help {
+    max-width: 350px;
   }
 }
 
@@ -6732,8 +6763,11 @@ img {
     font-size: 18px;
     width: 268px;
   }
+  .help__title_text:first-child {
+    max-width: 368px;
+  }
   .card-help {
-    margin: auto;
+    margin-right: 0;
   }
   .card-help_img:last-child {
     max-width: 92%;
