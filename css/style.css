@@ -5664,10 +5664,11 @@ img {
   }
   .navbar__button {
     font-size: 12px;
-    padding: 15px 26px;
+    padding: 13px 24px;
   }
   .navbar__logo {
     width: 90px;
+    margin-top: -5px;
   }
 }
 
@@ -5679,9 +5680,6 @@ img {
     height: 39px;
     font-weight: 400;
     font-size: 10px;
-  }
-  .navbar__button-text {
-    width: 85px;
   }
 }
 
@@ -5786,20 +5784,23 @@ img {
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
-    margin-bottom: 15px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    width: 274px;
   }
   .hero-text__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
   }
-  -list__item {
+  .hero-list__item {
     margin-bottom: 20px;
   }
-  -list__text {
+  .hero-list__text {
     font-size: 12px;
+    line-height: 15px;
   }
-  -list__image {
-    margin-right: 15px;
+  .hero-list__image {
+    margin-right: 10px;
   }
 }
 
@@ -5962,10 +5963,38 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
+    padding-bottom: 53px;
+    padding-top: 62px;
   }
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .offer__input {
+    padding: 22px 23px 27px;
+  }
+  .offer__button {
+    padding: 18px 41px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 21px;
+  }
+  .offer__call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .offer__call_manager {
+    line-height: 24px;
+    margin-bottom: 7px;
   }
 }
 
@@ -6036,6 +6065,17 @@ img {
 
 .portfolio .slider__image {
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding-top: 42px;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
 }
 
 .cards-repair {
@@ -6155,8 +6195,23 @@ img {
 }
 
 @media (max-width: 768px) {
+  .price {
+    padding-top: 50px;
+  }
+  .price__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+  }
   .price__card {
     max-width: 285px;
+  }
+  .card__title {
+    font-size: 14px;
+    margin-bottom: 0;
   }
 }
 
@@ -6253,21 +6308,6 @@ img {
   display: flex;
 }
 
-@media (max-width: 768px) {
-  .step {
-    margin-bottom: 30px;
-  }
-  .step::after {
-    display: none;
-  }
-  .steps-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 @media (max-width: 1200px) {
   .step {
     margin-bottom: 30px;
@@ -6283,6 +6323,30 @@ img {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    margin-bottom: 30px;
+  }
+  .step::after {
+    display: none;
+  }
+  .steps__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    margin-bottom: 33px;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -6471,6 +6535,11 @@ img {
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
     max-width: 100%;
+    padding-top: 29px;
+    padding-bottom: 22px;
+  }
+  .brif__interview {
+    margin-bottom: 45px;
   }
   .brif__input {
     max-width: 513px;
@@ -6496,6 +6565,7 @@ img {
     padding-left: 0;
     margin: auto;
     text-align: center;
+    margin-top: 66px;
   }
   .brif__form .form__title {
     font-family: 'Museo Sans Bold', sans-serif;
@@ -6681,7 +6751,6 @@ img {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
   font-size: 32px;
-  height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6770,7 +6839,7 @@ img {
 @media (max-width: 768px) {
   .help__title {
     margin: auto;
-    height: 321px;
+    margin-bottom: 42px;
   }
   .help__title_text {
     display: -webkit-box;
@@ -6784,13 +6853,11 @@ img {
             align-items: center;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 22px;
     width: 100%;
     font-size: 18px;
     width: 268px;
-  }
-  .help__title_text:first-child {
-    max-width: 368px;
+    padding: 73px 0px;
   }
   .card-help {
     margin-right: 0;
@@ -6799,8 +6866,9 @@ img {
     max-width: 92%;
   }
   .card-help__text {
-    font-size: 14px;
-    text-align: center;
+    width: 223px;
+    font-size: 12px;
+    text-align: left;
   }
   .card-help__text:nth-child(1) {
     padding-left: 0;

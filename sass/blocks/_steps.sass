@@ -49,14 +49,7 @@
       font-size: 20px
     &-block
       display: flex
-@media ( max-width: 768px)
-  .step
-    margin-bottom: 30px
-    &::after
-      display: none
-    &s
-      &-block
-        flex-direction: column
+
 
 @media ( max-width: 1200px)
   .step
@@ -68,7 +61,21 @@
       &-block
         justify-content: center
         flex-wrap: wrap
-  
+@media ( max-width: 768px)
+  .step
+    margin-bottom: 30px
+    &::after
+      display: none
+    &s
+      &__title
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 25px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 33px
+      &-block
+        flex-direction: column  
 
   
   

@@ -4,7 +4,7 @@
   &_text
     +reg
     font-size: 32px
-    height: 280px
+    // height: 280px
     display: flex
     justify-content: center
     align-items: center
@@ -57,26 +57,27 @@
 @media (max-width: 768px)
   .help__title
     margin: auto
-    height: 321px
+    // height: 321px
+    margin-bottom: 42px
     &_text
       display: flex
       justify-content: center
       align-items: center
       +bold
-      line-height: 30px
+      line-height: 22px
       width: 100%
       font-size: 18px
       width: 268px
-      &:first-child
-        max-width: 368px
+      padding: 73px 0px
   .card-help
     margin-right: 0
     &_img
       &:last-child
         max-width: 92%
     &__text
-      font-size: 14px
-      text-align: center
+      width: 223px
+      font-size: 12px
+      text-align: left      
       &:nth-child(1)
         padding-left: 0
         padding-right: 0
