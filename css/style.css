@@ -6064,6 +6064,7 @@ img {
 
 .price__card {
   margin-bottom: 30px;
+  margin: auto;
 }
 
 .card {
@@ -6471,6 +6472,12 @@ img {
     background-repeat: repeat-x, no-repeat;
     max-width: 100%;
   }
+  .brif__input {
+    max-width: 513px;
+  }
+  .brif__button {
+    max-width: 513px;
+  }
   .brif-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6487,22 +6494,27 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-left: 0;
+    margin: auto;
+    text-align: center;
   }
   .brif__form .form__title {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
-    width: 274px;
+    width: none;
     line-height: 25.35px;
     font-size: 16px;
   }
   .brif__form .form__subtitle {
+    text-align: none;
     font-family: 'Museo Sans Light', sans-serif;
     font-weight: 300;
   }
   .brif__form .form__description {
     font-family: 'Museo Sans Light', sans-serif;
     font-weight: 300;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .interview-list__item {
     display: -webkit-box;
@@ -6623,7 +6635,21 @@ img {
     font-weight: 700;
   }
   .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 40px;
+  }
+  .contacts-list__icon {
+    margin-right: 15px;
   }
   .contacts-list_text {
     line-height: 26px;
