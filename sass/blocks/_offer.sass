@@ -55,15 +55,17 @@
     max-width: 360px
     line-height: 35px
     margin-bottom: 19px
-    margin-top: -11px
+    margin-top: -7px
     text-align: left
   &__subtitle
     max-width: 250px
     display: block
     margin-bottom: 30px
+    line-height: 20px
   &__input
     margin-bottom: 30px
     width: 240px
+    padding: 23px 26px
     &:first-child
       margin-right: 10px
     &:focus
@@ -73,7 +75,7 @@
     +bold
     width: 100%
     min-height: 70px
-    margin-bottom: 30px
+    margin-bottom: 25px
   &__call
     display: flex
     justify-content: space-between
@@ -81,17 +83,15 @@
     &_manager
       +reg
       max-width: 247px
-      line-height: 21px
+      line-height: 23px
     &_text
       +reg
       font-size: 15px
-      font-weight: 400
       line-height: 24px
     &_tel
       display: block
       text-decoration: none
       color: $text-color
-      font-weight: 400
       +bold
 @media (max-width: 1200px)
   .offer
@@ -107,7 +107,10 @@
   .offer
     background: #ffffff
     padding-bottom: 53px
-    padding-top: 62px
+    padding-top: 86px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 23px
     &-block
       width: 100%
       padding-right: 0
@@ -116,6 +119,10 @@
       line-height: 20px
     &__input
       padding: 22px 23px 27px
+      &:nth-child(1)
+        margin-bottom: 5px
+      &:nth-child(2)
+        margin-bottom: 6px
     &__button
       padding: 18px 41px
       line-height: 18px

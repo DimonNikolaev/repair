@@ -149,11 +149,12 @@
         <div class="steps-block">
           <div class="step wow">
             <div class="step__image hvr-grow"><img src="img/steps/woman.png" alt=""></div><!-- /.step__image -->
-            <p class="step__text">Вы звоните нам или оставляете заявку</p><!-- /.step__text -->
+            <p class="step__text">Вы звоните нам<br> или оставляете заявку</p><!-- /.step__text -->
           </div><!-- /.step -->
           <div class="step wow">
             <div class="step__image hvr-grow"><img src="img/steps/watch.png" alt=""></div><!-- /.step__image -->
-            <p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p><!-- /.step__text -->
+            <p class="step__text">Согласуем удобное<br> для Вас время выезда специалиста на замер</p>
+            <!-- /.step__text -->
           </div><!-- /.step -->
           <div class="step wow">
             <div class="step__image hvr-grow"><img src="img/steps/money.png" alt=""></div><!-- /.step__image -->
@@ -165,7 +166,7 @@
           </div><!-- /.step -->
           <div class="step wow">
             <div class="step__image hvr-grow"><img src="img/steps/calendar.png" alt=""></div><!-- /.step__image -->
-            <p class="step__text">Выполняем ремонт в указанные сроки</p><!-- /.step__text -->
+            <p class="step__text">Выполняем ремонт<br> в указанные сроки</p><!-- /.step__text -->
           </div><!-- /.step -->
         </div><!-- /.steps-block -->
       </div><!-- /.container -->
@@ -178,7 +179,8 @@
       <div class="container">
         <div class="cards help__cards">
           <div class="card card-help"><img class="card-help__img" src="img/help/man-search.png" alt=""><span
-              class="card-help__text"><span class="card-help__text_bold">Поможем закупить все материалы по оптовым ценам
+              class="card-help__text"><span class="card-help__text_bold">Поможем закупить все материалы<br> по оптовым
+                ценам
                 у проверенных поставщиков</span></span></div>
           <div class="card card-help"><img class="card-help__img" src="img/help/man-view.png" alt=""><span
               class="card-help__text">Мы дадим Вам <span class="card-help__text_bold">максимальные скидки</span> у наших
@@ -222,11 +224,12 @@
 
   <div class="contacts-blocks">
     <iframe
-      src="https://yandex.ru/map-widget/v1/?um=constructor%3A98ba37c5921f077f4a0075b955016d77a82ab98dae017d3da8556ad343a2d982&amp;source=constructor"
-      width="1175" height="640" frameborder="0" class="contacts-blocks__map"></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.456048298728!2d37.19910331627266!3d55.61147998051579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556d92c52e921%3A0x7069f1a444f51ab2!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwg0KLQvtC70YHRgtC-0L_QsNC70YzRhtC10LLQviwg0JzQvtGB0LrQstCwLCAxNDMzNTA!5e0!3m2!1sru!2sru!4v1566067674223!5m2!1sru!2sru"
+      width="1175" height="640" class="contacts-blocks__map"></iframe>
+
     <div class="container">
       <div class="contacts">
-        <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+        <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас <br>по всем вопросам ремонта</h3>
         <ul class="contacts-list">
           <li class="contacts-list__item"><span class="contacts-list__icon"><img src="img/footer/map.png" alt=""></span>
             <div class="contacts-list__text">г. Москва<br><span class="contacts-list__text_bold">ул. Ленинга, д.
@@ -268,7 +271,23 @@
     $(document).ready(function () {
       var owl = $(".owl-carousel").owlCarousel({
         loop: true,
-        margin: 10
+        margin: 30,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          768: {
+            items: 1,
+            nav: false
+          },
+          1200: {
+            items: 3,
+            nav: true,
+            loop: false
+          }
+        }
       });
       $('.arrows__right').click(function () {
         owl.trigger('next.owl.carousel');
