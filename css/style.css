@@ -6378,12 +6378,19 @@ img {
 
 @media (max-width: 768px) {
   .portfolio {
-    padding-top: 42px;
+    padding-top: 35px;
   }
   .portfolio__title {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 22px;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 38px;
+    width: 278px;
+  }
+  .portfolio .slider {
+    margin-bottom: 29px;
+  }
+  .portfolio .slider__image {
+    max-width: 90%;
   }
 }
 
@@ -6516,7 +6523,8 @@ img {
 
 @media (max-width: 768px) {
   .price {
-    padding-top: 50px;
+    padding-top: 14px;
+    padding-bottom: 0px;
   }
   .price__title {
     font-size: 18px;
@@ -6528,10 +6536,25 @@ img {
   }
   .price__card {
     max-width: 285px;
+    margin-bottom: 20px;
+  }
+  .price__card:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .price__card:nth-child(5) {
+    margin-right: 0;
+    margin-left: 0;
   }
   .card__title {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 0;
+  }
+  .card__text {
+    padding-top: 35px;
+  }
+  .card__image {
+    margin-bottom: -37px;
   }
 }
 
@@ -6651,13 +6674,50 @@ img {
   .step {
     margin-bottom: 30px;
   }
+  .step__image {
+    margin-bottom: 18px;
+  }
+  .step__image:nth-child(1) {
+    margin-bottom: 22px;
+    margin-right: 82px;
+  }
+  .step__image:nth-child(2) {
+    margin-bottom: 26px;
+  }
+  .step__image:nth-child(3) {
+    margin-bottom: 24px;
+    max-width: 170px;
+  }
+  .step__image:nth-child(4) {
+    margin-bottom: 21px;
+  }
+  .step__image:nth-child(5) {
+    margin-bottom: 23px;
+  }
+  .step__text {
+    font-size: 11px;
+  }
+  .step__text:nth-child(2) {
+    max-width: 175px;
+    line-height: 17px;
+  }
+  .step__text:nth-child(3) {
+    max-width: 112px;
+    margin-right: 79px;
+  }
+  .step__text:nth-child(5) {
+    max-width: 170px;
+  }
   .step::after {
     display: none;
+  }
+  .steps {
+    padding-top: 69px;
   }
   .steps__title {
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
   .steps__subtitle {
     font-size: 14px;
@@ -6862,6 +6922,9 @@ img {
   }
   .brif__interview {
     margin-bottom: 45px;
+    padding-right: 0;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
   .brif__input {
     max-width: 513px;
@@ -6915,15 +6978,40 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .interview-list__item:nth-child(1) {
+    margin-bottom: 28px;
+  }
+  .interview-list__item:nth-child(2) {
+    margin-bottom: 14px;
+  }
+  .interview-list__item:nth-child(3) {
+    margin-bottom: 23px;
+  }
   .interview-list__text {
     max-width: 210px;
     font-family: 'Museo Sans Bold', sans-serif;
+  }
+  .interview-list__text:nth-child(1) {
+    font-size: 13px;
+    max-width: 218px;
+    line-height: 19px;
+  }
+  .interview-list__text:nth-child(2) {
+    font-size: 13px;
+    max-width: 218px;
+    line-height: 18px;
   }
   .interview-list__counter {
     margin-right: 8px;
   }
   .interview__title {
-    line-height: 23px;
+    margin-top: 32px;
+    line-height: 22px;
+    font-size: 19px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
+    margin-bottom: 39px;
   }
 }
 
@@ -7169,6 +7257,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .help {
+    padding-top: 50px;
+  }
   .help__title {
     margin: auto;
     margin-bottom: 42px;
@@ -7186,9 +7277,10 @@ img {
     font-family: 'Museo Sans Bold', sans-serif;
     line-height: 22px;
     width: 100%;
-    font-size: 18px;
+    font-size: 17px;
     width: 268px;
-    padding: 73px 0px;
+    padding: 65px 0px;
+    margin-left: 29px;
   }
   .card-help {
     margin-right: 0;
@@ -7201,16 +7293,25 @@ img {
     font-size: 12px;
     text-align: left;
   }
-  .card-help__text:nth-child(1) {
-    padding-left: 0;
-    padding-right: 0;
-  }
   .card-help__text:nth-child(2) {
+    padding: 40px 50px 34px 25px;
     padding-left: 0;
     padding-right: 0;
+    line-height: 18px;
+    margin-left: 21px;
   }
   .card-help__text:nth-child(3) {
+    padding: 46px 0px 34px 2px;
     padding-left: 0;
     padding-right: 0;
+    line-height: 18px;
+    margin-left: 21px;
+  }
+  .card-help__text:nth-child(4) {
+    padding: 48px 0px 38px 0px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 18px;
+    margin-left: 17px;
   }
 }

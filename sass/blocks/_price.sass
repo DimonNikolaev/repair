@@ -80,7 +80,8 @@
     flex-wrap: wrap
 @media (max-width: 768px)
   .price
-    padding-top: 50px
+    padding-top: 14px
+    padding-bottom: 0px
     &__title
       font-size: 18px
       line-height: 22px
@@ -89,7 +90,18 @@
       font-size: 14px
     &__card
       max-width: 285px
+      margin-bottom: 20px
+      &:nth-child(2)
+        margin-right: 0
+        margin-left: 0
+      &:nth-child(5)
+        margin-right: 0
+        margin-left: 0
   .card
     &__title
-      font-size: 14px
+      font-size: 13px
       margin-bottom: 0
+    &__text
+      padding-top: 35px
+    &__image
+      margin-bottom: -37px
