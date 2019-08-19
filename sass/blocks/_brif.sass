@@ -116,11 +116,11 @@
 @media (max-width: 768px)
   .brif
     background-image: url('../img/brif/brif-bg-color.jpg'), url('../img/brif/bg-image.jpg')
-    background-position: top center , center bottom
-    background-size: 100% 50%, cover
+    background-position: top center , center
+    background-size: 100% 47%, cover
     background-repeat: repeat-x, no-repeat
     max-width: 100%
-    padding-top: 29px
+    padding-top: 14px
     padding-bottom: 22px
     &__interview
       margin-bottom: 45px
@@ -128,34 +128,53 @@
       flex-basis: 0
     &__input
       max-width: 513px
+      &:first-of-type
+        padding: 23px 26px
+        margin-bottom: 7px
+      &:last-of-type
+        margin-bottom: -8px
     &__button
       max-width: 513px
+      font-size: 14px
+      padding: 30px 26px
+      margin-bottom: 31px
     &-block
       flex-direction: column
     &__form
-      margin-top: 80px
       display: flex
       flex-direction: column
       padding-left: 0
       margin: auto
       text-align: center
-      margin-top: 66px
+      margin-top: 43px
       .form
         &__title
           +bold
           width: none
           line-height: 25.35px
-          font-size: 16px
+          font-size: 18px
+          margin-left: -5px
+          margin-bottom: 22px
+          margin-top: 10px
         &__subtitle
           text-align: none
+          font-size: 14px
+          margin-bottom: 34px
           +reg
         &__description
           +reg
-          justify-content: center
-          font-size: 14px
-          margin-bottom: 100px
+          padding-left: 0
+          width: 154px
+          margin: auto
+          line-height: 21px 
+          font-size: 15px
+          margin-bottom: 95px
+          
   .interview
     &-list
+      margin-left: -3px
+      &:nth-child(2)
+        margin-top: -13px
       &__item
         display: flex
         align-items: center
@@ -179,9 +198,10 @@
       &__counter
         margin-right: 8px
     &__title
-      margin-top: 32px
+      margin-top: 28px
       line-height: 22px
       font-size: 19px
+      margin-left: -3px
     &__subtitle
       font-size: 14px
       margin-bottom: 39px

@@ -61,18 +61,33 @@
     &__title
       margin-bottom: 25px
       font-size: 18px
+      line-height: 22px
       +bold
     &-list
       display: flex
       justify-content: left
       align-items: center
       flex-wrap: wrap
+      margin-top: 11px
       &__icon
         margin-right: 15px
+        &:nth-child(1)
+          margin-right: 10px
       &_item
-      margin-bottom: 40px
+        margin-bottom: 40px
+        &:nth-child(1)
+          margin-bottom: 36px
+        &:nth-child(2)
+          margin-bottom: 35px
       &_text
         line-height: 26px
+        &:nth-child(2)
+          line-height: 16px
+        &:nth-child(3)
+          line-height: 16px
+        &_bold
+          &:nth-child(1)
+            line-height: 29px
     &-blocks
       display: flex
       flex-direction: column
