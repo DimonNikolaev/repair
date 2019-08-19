@@ -5815,29 +5815,27 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+  position: relative;
 }
 
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
 }
 
-.brif__input.invalid {
-  border: 1px solid red;
-}
-
-.offer__input.invalid {
-  border: 1px solid red;
-}
-
-#username-error.invalid {
+#username-error {
   position: absolute;
-  top: 253px;
+  top: 0px;
+  left: 20px;
+  font-size: 20px;
+  color: red;
 }
 
-#phone-error.invalid {
+#phone-error {
   position: absolute;
-  left: 257px;
-  top: 253px;
+  top: 0px;
+  left: 20px;
+  font-size: 20px;
+  color: red;
 }
 
 .owl-nav {
@@ -5855,17 +5853,19 @@ img {
     max-width: 580px;
     width: 90%;
   }
-  #username-error.invalid {
-    font-size: 14px;
+  #username-error {
     position: absolute;
-    top: 210px;
-    left: 8px;
+    top: -20px;
+    left: 170px;
+    font-size: 13px;
+    color: red;
   }
-  #phone-error.invalid {
+  #phone-error {
     position: absolute;
-    top: 288px;
-    left: 11px;
-    font-size: 14px;
+    top: -20px;
+    left: 170px;
+    font-size: 13px;
+    color: red;
   }
 }
 
@@ -6161,6 +6161,16 @@ img {
   margin-top: -84px;
 }
 
+.offer__wrap {
+  display: inline;
+  position: relative;
+  margin-right: 10px;
+}
+
+.offer__wrap:nth-child(2) {
+  margin-right: 0;
+}
+
 .offer::before {
   content: '';
   width: 50%;
@@ -6198,10 +6208,6 @@ img {
   padding: 23px 26px;
 }
 
-.offer__input:first-child {
-  margin-right: 10px;
-}
-
 .offer__input:focus {
   border-color: orange;
   outline: none;
@@ -6218,9 +6224,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -6230,6 +6236,7 @@ img {
   font-family: 'Museo Sans Light', sans-serif;
   max-width: 247px;
   line-height: 23px;
+  margin-right: 64px;
 }
 
 .offer__call_text {
@@ -6264,7 +6271,7 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
-    padding-bottom: 53px;
+    padding-bottom: 83px;
     padding-top: 86px;
   }
   .offer__subtitle {
@@ -6307,6 +6314,7 @@ img {
     line-height: 24px;
     margin-bottom: 7px;
     margin-left: 5px;
+    margin-right: 0;
   }
   .offer__call_text {
     margin-left: 7px;
@@ -6348,6 +6356,38 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.success {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 50;
+}
+
+.success__block {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.success__text {
+  padding: 50px;
+  font-size: 14px;
+  background-color: #fff;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .portfolio {
@@ -6757,6 +6797,11 @@ img {
   padding-bottom: 79px;
 }
 
+.brif__wrap {
+  position: relative;
+  display: inline;
+}
+
 .brif-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6806,6 +6851,10 @@ img {
   font-size: 16px;
   margin-bottom: 93px;
   display: block;
+}
+
+.interview__subtitle br {
+  display: none;
 }
 
 .interview-list {
@@ -6881,7 +6930,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 20px;
-  font-family: 'Museo Sans Bold', sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -6952,7 +7001,7 @@ img {
     margin-bottom: 7px;
   }
   .brif__input:last-of-type {
-    margin-bottom: -8px;
+    margin-bottom: 7px;
   }
   .brif__button {
     max-width: 513px;
@@ -7053,6 +7102,7 @@ img {
   .interview__subtitle {
     font-size: 14px;
     margin-bottom: 39px;
+    width: 172px;
   }
 }
 
@@ -7280,15 +7330,15 @@ img {
   margin: auto;
 }
 
-.card-help__text:nth-child(1) {
-  padding: 17px 85px 48px 26px;
+.card-help__text_one {
+  padding: 17px 50px 48px 26px;
 }
 
-.card-help__text:nth-child(2) {
+.card-help__text_two {
   padding: 17px 50px 48px 25px;
 }
 
-.card-help__text:nth-child(3) {
+.card-help__text_tree {
   padding: 17px 64px 48px 25px;
 }
 

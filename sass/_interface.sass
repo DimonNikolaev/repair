@@ -31,21 +31,25 @@ img
   padding: 20px 26px
   font-size: 15px
   border-radius: 10px
+  position: relative
 .arrows
   &__left, &__right
     &:hover
       cursor: pointer
-.brif__input.invalid
-  border: 1px solid red
-.offer__input.invalid
-  border: 1px solid red
-#username-error.invalid
+
+#username-error
   position: absolute
-  top: 253px
-#phone-error.invalid
+  top: 0px
+  left: 20px
+  font-size: 20px
+  color: red
+#phone-error
   position: absolute
-  left: 257px
-  top: 253px
+  top: 0px
+  left: 20px
+  font-size: 20px
+  color: red
+
 .owl-nav
   display: none
 
@@ -56,16 +60,18 @@ img
   .container
     max-width: 580px
     width: 90%
-  #username-error.invalid
-    font-size: 14px
+  #username-error
     position: absolute
-    top: 210px
-    left: 8px
-  #phone-error.invalid
+    top: -20px
+    left: 170px
+    font-size: 13px
+    color: red
+  #phone-error
     position: absolute
-    top: 288px
-    left: 11px
-    font-size: 14px
+    top: -20px
+    left: 170px
+    font-size: 13px
+    color: red
 @media (max-width: 567px)
   .container
     width: 85%

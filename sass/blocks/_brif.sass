@@ -4,6 +4,9 @@
   background-size: 50%, contain
   background-repeat: repeat-y, no-repeat
   padding-bottom: 79px
+  &__wrap
+    position: relative
+    display: inline
   &-block
     display: flex
   &__interview
@@ -35,6 +38,8 @@
     font-size: 16px
     margin-bottom: 93px
     display: block
+    br
+      display: none
   &-list
     list-style: none
     padding: 0
@@ -83,7 +88,7 @@
     display: flex
     justify-content: center
     padding-left: 20px
-    +bold
+    +reg
 @media (max-width: 1200px)
   .brif
     &__form
@@ -132,7 +137,7 @@
         padding: 23px 26px
         margin-bottom: 7px
       &:last-of-type
-        margin-bottom: -8px
+        margin-bottom: 7px
     &__button
       max-width: 513px
       font-size: 14px
@@ -206,3 +211,4 @@
     &__subtitle
       font-size: 14px
       margin-bottom: 39px
+      width: 172px
