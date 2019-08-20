@@ -51,14 +51,14 @@ gulp.task('minify-css', function (done) {
 })
 
 
-gulp.task('htmlmin', function (done) {
+gulp.task('htmlmin', function (cb) {
   return gulp.src('*.html')
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
     .pipe(gulp.dest('dist/'))
 
-  done();
+  cb();
 })
 
 gulp.task('fonts', function (done) {
